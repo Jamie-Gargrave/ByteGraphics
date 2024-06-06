@@ -14,14 +14,24 @@
         <!-- <div class="promoBar">
             <p>FLASH SALE! CONTACT US TODAY</p>
         </div> -->
-        <header>
-            <img class="logo" src="/img/smallLogo.png" alt="logo"> 
-            <ul class="right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li class="contact"><a href="#">Contact Us</a></li>
-            </ul>
+        <header class="background"> 
+            <nav>
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <ul>
+                    <li class="space logo"><a href="#"><img src="img/smallLogo.png" alt="Logo"></a></li>
+                    <li class="hideOnMobile space"><a href="#">Home</a></li>
+                    <li class="hideOnMobile space"><a href="#">About Us</a></li>
+                    <li class="hideOnMobile space"><a href="#">Reviews</a></li>
+                    <li class="hideOnMobile space"><a href="#">Contact Us</a></li> 
+                    <li class="menu-button" onclick="showSidebar()"><a><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav> 
             <section id="introSite">
                 <div class="intro">
                   <h1>Byte Graphic Design</h1>
@@ -32,23 +42,22 @@
         </header>
         <section class="about"> 
             <h2><i class="fa-solid fa-briefcase icon"></i> About Us</h2>
-            <p>Why not learn more about our innovtive, high-quality brand?</p>
+            <p>Why not learn more about our innovative, high-quality brand?</p>
             <div class="container">
                 <div class="aboutbox">
                     <div class="abouttext">
                         <h2><i class="fa-solid fa-address-card icon spacebelow"></i> Who are we?</h2>
                         <p class="spacebelowtext">Byte Graphics Design was founded by Jamie, in 2023 with a scope
                             to create high-quality graphics to customers at a fraction of
-                            the price compared to other graphics designers.
+                            the price compared to other graphics designers.</p>
                             <h2 class="text-right"><i class="fa-solid fa-print icon spacebelow"></i> What services do we offer?</h2>
                             <p class="spacebelowtext text-right">Byte Graphics Design can make any and all graphics; ranging from 
                                 logos, infographics, business cards, social media banners, advertisement posters
-                                and etc, if you can think it, then we can make it!
+                                and etc, if you can think it, then we can make it!</p>
                             <h2><i class="fa-solid fa-people-group icon spacebelow"></i> How many people are in your team?</h2>
                             <p class="spacebelowtext">Byte Graphics Design was founded by Jamie, and is the only designer
                                 on the team currently, although; we can collaborate on other projects 
-                                with external designers, if needed! 
-                        </p>
+                                with external designers, if needed! </p>
                     </div>
                 </div>
                 <div class="aboutbox profilephoto"></div>
@@ -82,12 +91,24 @@
                     </i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i>/5</h2>
                     <h2>Mitch</h2>
                     <p>I would highly recommend, it was a fast and easy process to order. 
-                        The options are limitless which can fit everyones needs, and the product was high quality.</p>
+                        The options are limitless which can fit everyone's needs, and the product was high quality.</p>
                 </div>
             </div>
         </section>
         <footer>
             <p>All rights reserved, © Byte Graphic Design 2024</p>
-        </footer>
+        </footer> 
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+    
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
     </body>
 </html>
