@@ -7,7 +7,7 @@
     padding: 0;
     width: auto;
     height: auto;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Ubuntu", sans-serif; 
 }
 
 :root {
@@ -85,7 +85,7 @@ nav li:first-child {
     top: 0;
     right: 0; 
     height: 100vh; 
-    width: 250px;
+    width: 290px;
     z-index: 999; 
     backdrop-filter: blur(10px);
     background-color: rgba(176, 176, 176, 0.455);
@@ -98,16 +98,6 @@ nav li:first-child {
 
 .sidebar li{
     width:100%;
-} 
-
-@media (max-width: 800px){
-    .hideOnMobile {
-        display: none;
-    } 
-    
-    .menu-button {
-        display: block;
-    }
 } 
 
 .background{
@@ -197,6 +187,13 @@ nav li:first-child {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+} 
+
+.rcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .profilephoto {
@@ -217,10 +214,6 @@ nav li:first-child {
 
 .spacebelowtext {
     padding-bottom: 40px;
-} 
-
-.text-right {
-    text-align: right;
 } 
 
 .reviews {
@@ -254,7 +247,7 @@ nav li:first-child {
     border: 1px rgba(255, 253, 253, 0.3) solid;
     width: 250px;
     height: 210px;
-    border-radius: 40px;
+    border-radius: 10px;
     padding: 25px;
     text-align: center;
     color: white;
@@ -268,25 +261,460 @@ nav li:first-child {
 footer {
     width: 100%;
     height: 25px;
-    text-align: center;
+    text-align: center; 
+    justify-content: center;
     background-color: rgb(236, 236, 236);
     color: rgb(98, 98, 98);
     padding: 25px 0;
+}  
+
+/* Contact us Page */ 
+
+.contactUs {
+    height: auto; 
+    width: auto;
 }
 
-@media (max-width: 375px) {
-    
-    /* Header */ 
+.contactUs > h2 {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 40px;
+}
 
-    .logo {
-        height: 45px;
-        padding: 20px 0 0 20px;
-        margin-left: 0;
+.contactUs > p {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 17px;
+    padding-bottom: 50px;
+} 
+
+.ccontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+    padding-bottom: 25px;
+} 
+
+.contactBox {
+    margin: 0 10px;
+    border: 1px rgb(0, 0, 0) solid;
+    width: 500px;
+    height: 600px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background-color:rgba(255, 253, 253, 0.1);
+}
+
+
+@media (max-width: 1068px){
+
+    .reviewbox{
+        height: 240px;
+    }
+
+}  
+
+@media (max-width: 1000px){
+
+    .container {
+        width: 100%; 
+        margin: 0 auto;
+    }
+
+    .reviews{ 
+        height: auto;
+    }
+
+    .reviewbox{
+        height: 260px; 
+        margin-bottom: 20px;
+    }
+
+}  
+
+@media (max-width: 993px){ 
+
+    .intro > h1 {
+        font-size: 80px;
+    }
+
+    .abouttext {
+        margin: 25px 0;
     } 
 
-    .right{
+}  
+
+@media (max-width: 904px){
+
+    .reviewbox {
+        height: 300px;
+    }
+
+} 
+
+@media (max-width: 800px){ 
+
+    /* Header */
+
+    .hideOnMobile {
+        display: none;
+    } 
+    
+    .menu-button {
+        display: block;
+    }
+}    
+
+@media (max-width: 768px){   
+
+    .reviews {
+        height: 650px;
+    }    
+
+    .reviewbox {
+        height: 380px;
+    }
+
+    footer > p {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 700px){ 
+
+    .intro > p {
+        font-size: 15px;
+    } 
+
+    .container {
+        display: block;
+    }
+
+    .about {
+        height: auto;
+    } 
+
+    .about > p {
+        padding-bottom: 10px;
+    } 
+
+    .text-right {
+        text-align: left;
+    } 
+
+    .aboutbox {
+        margin: 0 20px; 
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+
+    .abouttext {
+        height: auto; 
+        margin: auto;
+    } 
+
+    .rcontainer {
+        display: block;
+    } 
+
+    .reviews {
+        height: 960px;
+    }
+
+    .reviewbox {
+        margin: 20px 40px 0 40px; 
+        padding: 10px;
+        width: auto;
+        height: auto;
+    } 
+
+}   
+
+@media (max-width: 539px){  
+
+    .intro > p {
+        margin: 0 20px;
+    }
+
+    .reviews {
+        height: 990px;
+    }
+
+}    
+
+@media (max-width: 527px){  
+
+    .reviews {
+        height: 1000px;
+    }
+
+}   
+
+@media (max-width: 495px){  
+
+    .abouttext {
+        padding: 10px 0 0 0;
+    }
+
+    .reviews {
+        height: 1020px;
+    }
+
+} 
+
+@media (max-width: 446px){   
+
+    .intro > h1 {
+        font-size: 4em; 
+    } 
+
+    .about > h2 {
+        font-size: 3em;
+    } 
+
+    .about > p {
+        font-size: 1.1em; 
+        padding-bottom: 20px; 
+        margin: 0 10px;
+    }
+
+    .reviews {
+        height: 1010px;
+    } 
+
+    .reviews > h2 {
+        font-size: 3em;
+    } 
+
+    .reviews > p {
+        font-size: 1.1em;
+        padding-bottom: 20px;
+    }
+
+} 
+
+@media (max-width: 395px){   
+
+    .reviews {
+        height: 1015px;
+    }  
+
+    .intro > h1 {
+        font-size: 3.6em; 
+    } 
+
+    .about > h2 {
+        font-size: 2.6em;
+    } 
+
+    .about > p {
+        font-size: 1em; 
+    }
+
+    .reviews > h2 {
+        font-size: 2.6em;
+    } 
+
+    .reviews > p {
+        font-size: 1em;
+    } 
+
+    footer > p {
+        font-size: 0.8rem;
+    }
+
+}  
+
+@media (max-width: 379px){   
+
+    .reviews {
+        height: 1025px;
+    }  
+
+    footer > p {
+        font-size: 0.8rem;
+    }
+} 
+
+@media (max-width: 350px){   
+
+    .reviews {
+        height: 1040px;
+    }   
+
+    footer > p {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* @media (max-width: 351px){
+
+    .intro > h1{
+        font-size: 3.4em; 
+    } 
+
+    .intro > p{
+        font-size: 1.2em; 
+        margin: 0 10px;
+    } 
+
+    .container {
+        display: block;
+        justify-content: center;
+        align-items: center; 
+        height: auto;
+    }  
+
+    .about {
+        height: auto; 
+        width: 100%;
+    }  
+
+    .about > h2{  
+        font-size: 2.6em;
+    } 
+
+    .about > p{ 
+        font-size: 0.9em; 
+        margin: 0 20px;
+    }  
+
+    .aboutbox{
+        height: auto;
+        width: auto;
+    }
+
+    .abouttext{ 
+        margin: 0 10px;
+        padding: 0; 
+    }
+
+    .abouttext > h2{ 
+        font-size: 1.2em;  
+    } 
+
+    .abouttext > p{ 
+        font-size: 0.8em;  
+    }  
+
+    .text-right {
+        text-align: left;
+    } 
+
+    .profilephoto{ 
+        display: none;
+    }  
+
+    .reviews {
+        width: 100%;
+        height: 1250px; 
+        
+    }
+    
+    .reviews > h2 {
+        font-size: 2.3em;
+    }
+    
+    .reviews > p {
+        font-size: 1em;   
+        padding-bottom: 30px;
+    }
+    
+    .reviewbox {
+        margin: 10px auto; 
+        
+    }  
+
+    footer > p {
+        font-size: 0.9em
+    }
+
+  } */
+
+/* @media (max-width: 350px) {
+    
+    .intro > h1{
+        font-size: 3.4em; 
+    } 
+
+    .intro > p{
+        font-size: 1.2em; 
+        margin: 0 10px;
+    } 
+
+    .container {
+        display: block;
+        justify-content: center;
+        align-items: center; 
+        height: auto;
+    }  
+
+    .about {
+        height: auto; 
+        width: 100%;
+    }  
+
+    .about > h2{  
+        font-size: 2.6em;
+    } 
+
+    .about > p{ 
+        font-size: 0.9em; 
+        margin: 0 20px;
+    }  
+
+    .aboutbox{
+        height: auto;
+        width: auto;
+    }
+
+    .abouttext{ 
+        margin: 0 10px;
+        padding: 0; 
+    }
+
+    .abouttext > h2{ 
+        font-size: 1.2em;  
+    } 
+
+    .abouttext > p{ 
+        font-size: 0.8em;  
+    }  
+
+    .text-right {
+        text-align: left;
+    } 
+
+    .profilephoto{ 
         display: none;
     } 
 
-  } 
+    .reviews {
+        width: 100%;
+        height: 1250px; 
+        
+    }
+    
+    .reviews > h2 {
+        font-size: 2.3em;
+    }
+    
+    .reviews > p {
+        font-size: 1em;   
+        padding-bottom: 30px;
+    }
+    
+    .reviewbox {
+        margin: 10px auto; 
+        
+    }  
 
+    footer > p {
+        font-size: 0.9em
+    }
+
+  }   */
