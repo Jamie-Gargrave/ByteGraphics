@@ -485,6 +485,15 @@ input[type=checkbox]{
     height: 300px;
 }
 
+.services a {
+    text-decoration: none;
+    color: var(--brand-col);
+}
+
+.services a:hover {
+    color: grey;
+}
+
 .services > div {
     margin: 30px auto;
     width: auto;
