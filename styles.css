@@ -36,6 +36,10 @@ h2 {
 p {
     font-family: "Ubuntu", sans-serif;
     font-style: normal; 
+} 
+
+strong {
+    font-weight: 450;
 }
 
 /* Header & NavMenu*/
@@ -265,13 +269,52 @@ nav li:first-child {
 
 footer {
     width: 100%;
-    height: 25px;
+    height: auto;
     text-align: center; 
     justify-content: center;
     background-color: rgb(236, 236, 236);
     color: rgb(98, 98, 98);
     padding: 25px 0;
-}  
+}
+
+.fcontainer {
+    display: flex;
+    width: auto;
+    justify-content: center; 
+    height: auto; 
+} 
+
+.fbox {
+    width: auto;
+    height: auto; 
+    margin: 0 100px; 
+    text-align: left; 
+    padding-bottom: 30px;
+    /* border: solid black 1px; */
+} 
+
+footer h2 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+}
+
+.socials {
+    font-size: 2rem;
+} 
+
+footer p {
+    font-size: 1rem;
+    padding: 5px 0;
+} 
+
+footer a {
+    text-decoration: none;
+    color: rgb(98, 98, 98);
+} 
+
+footer a:hover{
+    color: var(--brand-col);
+}
 
 /* Contact us Page */ 
 
@@ -345,7 +388,7 @@ input[type=number]{
 input[type=submit]{
     width: 20%; 
     padding: 5px; 
-    margin: 5px 5px; 
+    margin: 10px 5px; 
     border: 1px solid black; 
     border-radius: 5px; 
     background-color: rgba(128, 128, 128, 0.066);
@@ -373,6 +416,13 @@ label {
     margin: 0 5px;
 } 
 
+input[type=checkbox]{
+    padding: 5px; 
+    margin: 0 0 0 5px;
+    border: 1px solid black; 
+    background-color: rgba(128, 128, 128, 0.066);
+}
+
 .contactText {
     font-size: 18px;
     padding: 15px 0; 
@@ -389,15 +439,28 @@ label {
 
 .contactText a:hover {
     color: var(--brand-col);
+} 
+
+.ctext {
+    font-size: 0.8rem;
 }
+
+.ctext a{
+    text-decoration: none; 
+    color: grey;
+}
+
+.ctext a:hover {
+    color: var(--brand-col);
+} 
 
 
 /* Services Page */ 
 
 .services {
     width: 100%;
-    height: 850px;
-    background-color: rgb(236, 236, 236);
+    height: auto;
+    background-color: white;
 }
 
 .services > h2 {
@@ -414,21 +477,255 @@ label {
 }
 
 .center {
-    margin: 0 47%;
-    align-items: center;
+    margin: 30px auto;
+    text-align: center;
+    /* border: 1px solid rgb(140, 140, 140);
+    border-radius: 10px; */
+    width: 70%;
+    height: 300px;
 }
 
-.servicesTI div {
-    display: inline-block; 
-    border: 1px solid black;
+.services > div {
+    margin: 30px auto;
+    width: auto;
 }
 
+.left {
+    text-align: left;
+}
 
+.right {
+    text-align: right;
+}
+
+.servicesTI img {
+    min-height: 300px;
+    max-width: 400px;
+    border-radius: 10px;
+    background-position: center;
+} 
+
+.servicescontainer {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+} 
+
+.middle-space {
+    margin: 20px 20px;
+}
+
+.center h2, p {
+    padding: 5px 0;
+} 
+
+.lastButton {
+    padding-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--brand-col);
+    color: white;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.center a {
+    text-decoration: none;
+    color: white; 
+    padding: 10px;
+    border-radius: 50px;
+}
+
+/* Privacy Policy */
+
+.privacypolicy {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.privacypolicy > h2 {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.privacypolicy > p {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.privacypolicy div {
+    width: 50%;
+    height: auto; 
+    margin: 20px auto; 
+}  
+
+.ppfirst {
+    padding-top: 10px;
+}
+
+.indent {
+    margin-left: 15px;
+}
+
+.ulspace {
+    padding: 10px 0;
+} 
+
+.ulspace li {
+    padding: 5px;
+}
+
+.mspace {
+    padding: 15px 0;
+}
+
+.bottom {
+    padding: 0 0 10px 0;
+}
+
+.nameList {
+    list-style-type: upper-alpha;
+} 
+
+.last {
+    padding: 10px 0;
+}
+
+.privacypolicy a {
+    text-decoration: none;
+    color: black;
+} 
+
+.privacypolicy a:hover{
+    color: var(--brand-col);
+} 
+
+/* Terms of Service */ 
+
+.termsservice {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.termsservice > h2 {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.termsservice > p {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.termsservice div {
+    width: 50%;
+    height: auto; 
+    margin: 20px auto; 
+}  
+
+.tsfirst {
+    padding-top: 10px;
+}
+
+.indent {
+    margin-left: 15px;
+}
+
+.ulspace {
+    padding: 10px 0;
+} 
+
+.ulspace li {
+    padding: 5px;
+}
+
+.mspace {
+    padding: 15px 0;
+}
+
+.bottom {
+    padding: 0 0 10px 0;
+}
+
+.nameList {
+    list-style-type: upper-alpha;
+} 
+
+.last {
+    padding: 10px 0;
+}
+
+.termsservice a {
+    text-decoration: none;
+    color: black;
+} 
+
+.termsservice a:hover{
+    color: var(--brand-col);
+} 
+
+
+@media (max-width: 1641px){
+
+    .center {
+        width: auto;
+    }
+
+}  
+
+@media (max-width: 1423px){
+
+    .center {
+        width: auto;
+    }
+
+}  
+
+@media (max-width: 1253px){
+
+    .center {
+        width: auto;
+    }
+
+}  
+
+@media (max-width: 1113px){
+
+    .center {
+        width: 90%
+    }
+
+    .middle-space {
+        margin: 20px 0;
+    }
+
+    .center {
+        width: auto;
+    }
+
+}  
 
 @media (max-width: 1068px){
 
     .reviewbox{
         height: 240px;
+    }
+
+    .center {
+        width: auto;
     }
 
 }  
@@ -449,6 +746,22 @@ label {
         margin-bottom: 20px;
     }
 
+    .privacypolicy div {
+        width: 80%;
+        height: auto; 
+        margin: 20px auto; 
+    }  
+
+    .termsservice div {
+        width: 80%;
+        height: auto; 
+        margin: 20px auto; 
+    }
+
+    .center {
+        width: auto;
+    }
+
 }  
 
 @media (max-width: 993px){ 
@@ -463,10 +776,31 @@ label {
 
 }  
 
+@media (max-width: 917px){
+
+    .fbox {
+        margin: 0 80px; 
+    } 
+
+    .center {
+        margin: 60px 0;
+    }
+
+    .servicesTI {
+        min-height: 250px;
+        min-width: 200px;
+    }
+}
+
 @media (max-width: 904px){
 
     .reviewbox {
         height: 300px;
+    }
+
+    .servicesTI {
+        min-height: 200px;
+        max-width: 350px;
     }
 
 } 
@@ -501,7 +835,38 @@ label {
         padding: 0 15px;
         text-align: center;
     }
+
+    .services > p {
+        padding-bottom: 20px;
+        margin: 0 20px;
+    }
+
+    .center {
+        height: auto;
+        margin: 30px;
+    }
+
+    .servicescontainer {
+        display: block;
+        height: auto;
+    }
+
+    .servicesbox {
+        text-align: center; 
+        margin: 0 auto;
+    }
+
+    #leftt {
+        text-align: left;
+    }
 }    
+
+@media (max-width: 798px){
+
+    .fbox {
+        margin: 0 50px; 
+    } 
+}
 
 @media (max-width: 768px){   
 
@@ -578,6 +943,13 @@ label {
 
 }    
 
+@media (max-width: 618px){
+
+    .fbox {
+        margin: 0 30px; 
+    } 
+}
+
 @media (max-width: 606px){ 
 
     .contactBox {
@@ -639,6 +1011,25 @@ label {
 
 } 
 
+@media (max-width: 493px){
+
+    .fcontainer {
+        display: block;
+    } 
+
+    .privacypolicy div {
+        width: 90%;
+        height: auto; 
+        margin: 20px auto; 
+    }  
+
+    .termsservice div {
+        width: 90%;
+        height: auto; 
+        margin: 20px auto; 
+    }   
+}
+
 @media (max-width: 446px){   
 
     .intro > h1 {
@@ -668,7 +1059,35 @@ label {
         padding-bottom: 20px;
     }
 
+    .privacypolicy > h2 {
+        font-size: 3em;
+    } 
+
+    .privacypolicy > p {
+        font-size: 1.1em;
+        padding-bottom: 20px;
+    }
+
+    .termsservice > h2 {
+        font-size: 3em;
+    } 
+
+    .termsservice > p {
+        font-size: 1.1em;
+        padding-bottom: 20px;
+    }
+
+    .services > h2 {
+        font-size: 3em;
+    } 
+
+    .services > p {
+        font-size: 1.1em;
+        padding-bottom: 20px;
+    }
+
 } 
+
 
 @media (max-width: 395px){   
 
@@ -700,12 +1119,49 @@ label {
         font-size: 0.8rem;
     }
 
+    .privacypolicy > h2 {
+        font-size: 2.6em;
+    } 
+
+    .privacypolicy > p {
+        font-size: 1em;
+    } 
+
+    .termsservice > h2 {
+        font-size: 2.6em;
+    } 
+
+    .termsservice > p {
+        font-size: 1em;
+    } 
+
+    .services > h2 {
+        font-size: 2.6em;
+    } 
+
+    .services > p {
+        font-size: 1em;
+    } 
+
+    .servicesTI {
+        min-height: 150px;
+        max-width: 300px;
+    }
+
 }  
 
 @media (max-width: 392px){
     .reviews {
         height: 1020px;
     }  
+}
+
+@media (max-width: 387px){
+
+    .mobile {
+        /* margin: 20px 20px; */
+        margin: 10px 5px;
+    }
 }
 
 @media (max-width: 379px){   
@@ -719,9 +1175,23 @@ label {
     }
 } 
 
+@media (max-width: 373px){
+
+    .servicesTI {
+        min-height: 150px;
+        max-width: 250px;
+    }
+}
+
 @media (max-width: 372px){
     .reviews {
         height: 1040px;
+    }  
+} 
+
+@media (max-width: 374px){
+    .reviews {
+        height: 1050px;
     }  
 }
 
@@ -733,5 +1203,22 @@ label {
 
     footer > p {
         font-size: 0.8rem;
+    } 
+
+    form {
+        padding: 0;
+    }
+}
+
+@media (max-width: 339px){
+    .reviews {
+        height: 1060px;
+    }  
+} 
+
+@media (max-width: 345px){
+    .mobile1 {
+        margin: 10px 5px;
+        
     }
 }

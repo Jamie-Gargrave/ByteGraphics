@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Open+Sans:wght@300;400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <title>Byte Graphics Design</title> 
+        <title>Byte Graphics Design - Contact Us</title> 
         <meta name="description" content="Byte Graphics specialise in bringing your imaginations to life, 
         at a fraction of the price and hassle-free.">
         <meta name="keywords" content="build me a website, website builds, byte graphics, byte design, 
@@ -30,14 +30,13 @@
                 <ul class="sidebar">
                     <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=61560531088780">Services</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="/contactUs.html">Contact</a></li>
-                    <!-- <li><a href="#">Contact Us</a></li> -->
                 </ul>
                 <ul>
                     <li class="space logo"><a href="https://www.bytegraphics.co.uk"><img src="img/smallLogo.png" alt="Logo"></a></li>
                     <li class="hideOnMobile space"><a href="index.html">Home</a></li>
-                    <li class="hideOnMobile space"><a href="https://www.facebook.com/profile.php?id=61560531088780">Services</a></li>
+                    <li class="hideOnMobile space"><a href="services.html">Services</a></li>
                     <li class="hideOnMobile space"><a href="contactUs.html">Contact</a></li> 
                     <li class="menu-button" onclick="showSidebar()"><a><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
@@ -64,6 +63,8 @@
                             <input type="number" id="number" name="number" placeholder="07440 108625" required><br>
                             <label for="message">Message*:</label><br>
                             <textarea  id="message" name="message" placeholder="Put your message here..." required></textarea><br>
+                            <input class="cagree" type="checkbox" id="agree" name="agree" value="agree" required>
+                            <label class="ctext" for="agree"> I have read and understand the <a href="termsOfService.html" target="_blank">Terms of Service</a> and <a href="privacyPolicy.html">Privacy Policy</a> of this site and I agree to them.</label><br>
                             <input type="submit" value="Submit">
                         </form>
                     </div>
@@ -77,6 +78,25 @@
             </div>
         </section>
         <footer>
+            <div class="fcontainer">
+                <div class="fbox">
+                    <h2>Socials</h2> 
+                    <p class="socials"><a href="https://www.facebook.com/profile.php?id=61560531088780" target="_blank"><i class="fa-brands fa-square-facebook icon"></i></a> 
+                    <a href="https://www.instagram.com/bytegraphicsdesign/" target="_blank"><i class="fa-brands fa-square-instagram icon"></i></a> 
+                    <a href="https://www.linkedin.com/in/jamie-gargrave-9a99711b3/" target="_blank"><i class="fa-brands fa-linkedin icon"></i></a></p>
+                </div>
+                <div class="fbox">
+                    <h2>Legal</h2>
+                    <p><a href="privacyPolicy.html">Privacy Policy</a></p>
+                    <p><a href="termsOfService.html">Terms of Service</a></p>
+                </div>
+                <div class="fbox">
+                    <h2>Company</h2>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="services.html">Services</a></p>
+                    <p><a href="contactUs.html">Contact</a></p> 
+                </div>
+            </div>
             <p>All rights reserved, © Byte Graphic Design 2024</p>
         </footer> 
 
